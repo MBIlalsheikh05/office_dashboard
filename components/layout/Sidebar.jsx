@@ -1,8 +1,6 @@
 "use client"
 import React, {useEffect, useState} from "react"
 import { Home, Settings, FileText, List,Bell, DollarSign, House, Info, Mail, ShoppingBag, ShoppingCart, User } from 'lucide-react'
-
-// import { Bell, DollarSign, House, Info, Mail, Settings, ShoppingBag, ShoppingCart, User } from "lucide-react"
 import { usePathname } from "next/navigation"
 import Link from 'next/link';
 
@@ -37,10 +35,10 @@ const Sidebar = () => {
     const defaultItems = [
       { name: "Audit", href: "/dashboard/audit", icon: "List" },
       { name: "Logs", href: "/dashboard/logs", icon: "FileText" },
-      { name: "Settings", href: "/dashboard/settings", icon: "Settings" },
-      { name: "Info", href: "/dashboard/info", icon: "Info" },
-      { name: "Mail", href: "/dashboard/mail", icon: "Mail" },
-      { name: "User", href: "/dashboard/user", icon: "User" }
+      // { name: "Settings", href: "/dashboard/settings", icon: "Settings" },
+      // { name: "Info", href: "/dashboard/info", icon: "Info" },
+      // { name: "Mail", href: "/dashboard/mail", icon: "Mail" },
+      // { name: "User", href: "/dashboard/user", icon: "User" }
     ];
     setsidebarItems(defaultItems);
   }, []);
